@@ -1,21 +1,16 @@
 import java.io.*;
-
 import java.net.InetAddress;
-
 import java.net.Socket;
-
 
 public class Main {
 
-
-    public class NetworkingClient {
 
         public static void main(String args[]) {
 
             Socket client = null;
 
             // Default port number we are going to use
-            int portnumber = 1234;
+            int portnumber = 50000;
             if (args.length > 1) {
                 portnumber = Integer.parseInt(args[0]);
             }
@@ -63,4 +58,3 @@ public class Main {
             }
         }
     }
-}
